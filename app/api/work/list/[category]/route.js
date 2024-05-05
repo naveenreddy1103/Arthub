@@ -10,9 +10,9 @@ export const GET = async (req, { params }) => {
     let workList;
 
     if (category !== "All") {
-      workList = await Work.find({ category }).populate("creator");
+      workList = await Work.find({ category }).sort({createdAt: "desc"}).populate("creator");
     } else {
-      workList = await Work.find().populate("creator");
+      workList = await Work.find().sort({createdAt: "desc"}).populate("creator");
     }
 
     return new Response(JSON.stringify(workList), { status: 200 });

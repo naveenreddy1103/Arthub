@@ -18,7 +18,7 @@ const WorkSchema = new Schema({
     type: Number
   },
   workPhotoPaths: [{type: String}]
-})
+}, {timestamps: true})
 
 const Work = models.Work || model("Work", WorkSchema)
 export default Work

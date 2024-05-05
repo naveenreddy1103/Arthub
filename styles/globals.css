@@ -18,3 +18,7 @@ h1, h2, h3, h4, h5, p {
 * {
   box-sizing: border-box;
 }
+
+.show-more-btn {
+  margin: 10px 45%;
+}

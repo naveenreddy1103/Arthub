@@ -34,8 +34,8 @@ const Navbar = () => {
 
       <div className='navbar_search'>
         <input type='text' placeholder='Search...' value={query} onChange={(e) => setQuery(e.target.value)}/>
-        <IconButton disabled={query === ""}>
-          <Search sx={{ color: "red" }} onClick={searchWork}/>
+        <IconButton disabled={query === ""} onClick={searchWork}>
+          <Search sx={{ color: "red" }} />
         </IconButton>
       </div>
 
