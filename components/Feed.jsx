@@ -71,8 +71,7 @@ const Feed = () => {
         <Button
           variant="contained"
           className="show-more-btn"
-          onClick={showMoreFn}
-        >
+          onClick={showMoreFn}>
           Show More
         </Button>
       </div>
